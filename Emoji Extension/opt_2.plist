@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<string>opt_1</string>
+	<key>2</key>
+	<string>opt_2</string>
+	<key>3</key>
+	<string>opt_3</string>
+	<key>4</key>
+	<string>opt_4</string>
+	<key>5</key>
+	<string>opt_5</string>
+	<key>6</key>
+	<string>opt_6</string>
+	<key>7</key>
+	<string>opt_7</string>
+	<key>8</key>
+	<string>opt_8</string>
+	<key>9</key>
+	<string>opt_9</string>
+	<key>10</key>
+	<string>opt_10</string>
+	<key>11</key>
+	<string>opt_11</string>
+	<key>12</key>
+	<string>opt_12</string>
+	<key>13</key>
+	<string>opt_13</string>
+	<key>14</key>
+	<string>opt_14</string>
+	<key>15</key>
+	<string>opt_15</string>
+</dict>
+</plist>

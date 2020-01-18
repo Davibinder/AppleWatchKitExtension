@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--HomeScene-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="HomeScene" backgroundImage="bg_1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Emoji" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="34" alignment="left" id="MrP-KZ-FWO">
+                            <items>
+                                <label width="1" alignment="left" text="Welcome" textAlignment="center" id="HKv-gD-kmB"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="K44-DD-m8e">
+                            <items>
+                                <button width="1" alignment="left" title="Play" id="Rf7-5a-oWe">
+                                    <connections>
+                                        <action selector="buttonPressEvent" destination="AgC-eL-Hgc" id="p57-KN-Ksd"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-193" y="249"/>
+        </scene>
+        <!--QuestionsScene-->
+        <scene sceneID="mCm-hV-OcC">
+            <objects>
+                <controller identifier="QuestionsScene" backgroundImage="bg_1" id="s4u-Up-Lgb" customClass="QuestionsController" customModule="Emoji_Extension">
+                    <items>
+                        <group width="1" height="59.5" alignment="left" id="n2x-Dj-WOD">
+                            <items>
+                                <label width="1" height="1" alignment="left" verticalAlignment="bottom" text="Question" textAlignment="center" numberOfLines="3" id="2G7-lq-FYd"/>
+                            </items>
+                        </group>
+                        <group width="1" height="53" alignment="left" id="e6E-e6-Yl3">
+                            <items>
+                                <picker width="1" height="1" alignment="left" focusStyle="stack" id="muB-zL-XEg">
+                                    <connections>
+                                        <action selector="pickerItemEvent:" destination="s4u-Up-Lgb" id="8KV-By-CVu"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <button width="1" height="28.5" alignment="left" title="OK" id="xOn-t7-CTI">
+                            <connections>
+                                <action selector="buttonPressedEvent" destination="s4u-Up-Lgb" id="pSp-bj-p2P"/>
+                            </connections>
+                        </button>
+                        <label width="1" alignment="left" text="Score:" textAlignment="center" id="6UL-tJ-chk"/>
+                    </items>
+                    <connections>
+                        <outlet property="answerPicker" destination="muB-zL-XEg" id="i8a-56-cIm"/>
+                        <outlet property="quesLabel" destination="2G7-lq-FYd" id="ku0-uR-arf"/>
+                        <outlet property="scoreLabel" destination="6UL-tJ-chk" id="eKa-G2-ZdT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="57" y="226"/>
+        </scene>
+        <!--GameScene-->
+        <scene sceneID="nI2-8m-Wtz">
+            <objects>
+                <controller identifier="GameScene" backgroundImage="bg_1" id="JLI-9d-GTV" customClass="GamePlayController" customModule="Emoji_Extension">
+                    <items>
+                        <group width="1" height="34" alignment="left" id="67j-EP-gxa">
+                            <items>
+                                <label width="80.5" height="1" alignment="left" text="Guess Name" textAlignment="center" numberOfLines="3" id="gK8-BV-VPa">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <imageView width="70" height="35" alignment="left" id="njo-Oc-4M8"/>
+                            </items>
+                        </group>
+                        <group width="1" height="21" alignment="left" radius="6" id="bmA-GW-D1U">
+                            <items>
+                                <button width="35" height="50" alignment="left" title="a" id="pJb-Qv-Gh9">
+                                    <connections>
+                                        <action selector="buttonAction_A" destination="JLI-9d-GTV" id="5Be-6P-nFp"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="b" id="miJ-yi-crf">
+                                    <connections>
+                                        <action selector="buttonAction_B" destination="JLI-9d-GTV" id="qmu-L7-BTb"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="c" id="6gg-OK-Snf">
+                                    <connections>
+                                        <action selector="buttonAction_C" destination="JLI-9d-GTV" id="a0T-gA-AMr"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="d" id="ZB6-FT-20u">
+                                    <connections>
+                                        <action selector="buttonAction_D" destination="JLI-9d-GTV" id="er2-Qg-Oby"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="21" alignment="left" radius="6" id="X3H-pK-6c0">
+                            <items>
+                                <button width="35" height="50" alignment="left" title="e" id="2Oz-zU-2MG">
+                                    <connections>
+                                        <action selector="buttonAction_E" destination="JLI-9d-GTV" id="ZaX-y5-jKE"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="f" id="078-1q-JiJ">
+                                    <connections>
+                                        <action selector="buttonAction_F" destination="JLI-9d-GTV" id="uhF-RU-wJV"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="g" id="ult-kJ-Afn">
+                                    <connections>
+                                        <action selector="buttonAction_G" destination="JLI-9d-GTV" id="yDu-qZ-hzY"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="h" id="PIc-Mi-atL">
+                                    <connections>
+                                        <action selector="buttonAction_H" destination="JLI-9d-GTV" id="Rwk-m9-UcD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="21" alignment="left" radius="6" id="rj4-Oc-Ywl">
+                            <items>
+                                <button width="35" height="50" alignment="left" title="i" id="A0z-DY-pAQ">
+                                    <connections>
+                                        <action selector="buttonAction_I" destination="JLI-9d-GTV" id="zpM-Zu-qim"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="j" id="nJI-bd-8gC">
+                                    <connections>
+                                        <action selector="buttonAction_J" destination="JLI-9d-GTV" id="Bly-iv-t7M"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="k" id="Bed-NO-ZDH">
+                                    <connections>
+                                        <action selector="buttonAction_K" destination="JLI-9d-GTV" id="KA6-BD-ndW"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="50" alignment="left" title="l" id="avS-cM-Mt7">
+                                    <connections>
+                                        <action selector="buttonAction_L" destination="JLI-9d-GTV" id="dLH-UH-aty"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" radius="6" id="gV0-XI-x3T">
+                            <items>
+                                <label width="110.5" height="1" alignment="left" text="0" textAlignment="left" numberOfLines="3" id="xad-9g-t5N"/>
+                                <button width="30" height="20" alignment="left" title="X" id="15s-Te-ZQK">
+                                    <connections>
+                                        <action selector="cacelButton" destination="JLI-9d-GTV" id="sIG-lK-KEB"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="VH6-Td-Y8M">
+                            <items>
+                                <button width="80" alignment="left" title="OK" id="8I6-ug-XYP">
+                                    <connections>
+                                        <action selector="okButtonAction" destination="JLI-9d-GTV" id="jDm-OS-l8G"/>
+                                    </connections>
+                                </button>
+                                <label width="50.5" height="1" alignment="left" text="timer" textAlignment="center" id="oVY-xH-WZq"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="animalImage" destination="njo-Oc-4M8" id="zXr-mt-ekw"/>
+                        <outlet property="ansLabel" destination="xad-9g-t5N" id="NXH-DL-bdD"/>
+                        <outlet property="buttonA" destination="pJb-Qv-Gh9" id="kw3-O1-pki"/>
+                        <outlet property="buttonB" destination="miJ-yi-crf" id="spA-t6-Y4j"/>
+                        <outlet property="buttonC" destination="6gg-OK-Snf" id="fJg-QW-Z78"/>
+                        <outlet property="buttonD" destination="ZB6-FT-20u" id="ea9-cs-ArH"/>
+                        <outlet property="buttonE" destination="2Oz-zU-2MG" id="jxR-Yf-Mzb"/>
+                        <outlet property="buttonF" destination="078-1q-JiJ" id="ux8-1v-HIb"/>
+                        <outlet property="buttonG" destination="ult-kJ-Afn" id="HSH-P5-lMU"/>
+                        <outlet property="buttonH" destination="PIc-Mi-atL" id="Qgl-gT-Rh5"/>
+                        <outlet property="buttonI" destination="A0z-DY-pAQ" id="k7d-HG-8lX"/>
+                        <outlet property="buttonJ" destination="nJI-bd-8gC" id="bRv-Jp-Fbz"/>
+                        <outlet property="buttonK" destination="Bed-NO-ZDH" id="oWx-Jf-fUP"/>
+                        <outlet property="buttonL" destination="avS-cM-Mt7" id="xJM-7D-ROR"/>
+                        <outlet property="timerLabel" destination="oVY-xH-WZq" id="AiO-JE-3CX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="315" y="232"/>
+        </scene>
+        <!--GameScene_1-->
+        <scene sceneID="GJz-5h-NOM">
+            <objects>
+                <controller identifier="GameScene_1" id="nD0-No-dQz" customClass="GamePlayController_1" customModule="Emoji_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="u5e-a0-GfG">
+                            <items>
+                                <imageView width="1" alignment="left" image="horse" id="xD2-kA-qbz"/>
+                            </items>
+                        </group>
+                        <table alignment="left" spacing="3" id="Gub-nN-Dbw">
+                            <items>
+                                <tableRow identifier="FirstRowController" id="sPD-HX-9BV" customClass="FirstRowController" customModule="Emoji_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="A1R-KV-Bn8">
+                                        <items>
+                                            <button width="32" height="1" alignment="left" title="a" id="DgP-c3-t3N"/>
+                                            <button width="32" height="1" alignment="left" title="b" id="rYV-Fb-BpG"/>
+                                            <button width="32" height="1" alignment="left" title="c" id="JRb-rD-77e"/>
+                                            <button width="32" height="1" alignment="left" title="d" id="2Md-rK-gFD"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="aButton" destination="DgP-c3-t3N" id="wtC-O6-Lgd"/>
+                                        <outlet property="bButton" destination="rYV-Fb-BpG" id="txm-DN-AiG"/>
+                                        <outlet property="cButton" destination="JRb-rD-77e" id="Rrb-Sw-4J2"/>
+                                        <outlet property="dButton" destination="2Md-rK-gFD" id="th4-XY-WtB"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow id="dss-Jp-igB">
+                                    <group key="rootItem" width="1" alignment="left" id="Wg0-Zt-tJj">
+                                        <items>
+                                            <button width="32" height="1" alignment="left" title="Button" id="PaI-UM-J0d"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="4H5-lr-Ybv"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="se8-UO-Vm7"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="NaX-2v-Dxv"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="U4w-5d-F3q">
+                                    <group key="rootItem" width="1" alignment="left" id="pLT-4L-Ym7">
+                                        <items>
+                                            <button width="32" height="1" alignment="left" title="Button" id="Yvq-P4-gly"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="2b6-2y-nLV"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="JGc-gs-d3K"/>
+                                            <button width="32" height="1" alignment="left" title="Button" id="zcA-jy-mCa"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Gub-nN-Dbw" id="caV-Cw-sf5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="579" y="249"/>
+        </scene>
+        <!--CustomAnimationScene-->
+        <scene sceneID="awp-4m-ufK">
+            <objects>
+                <controller identifier="CustomAnimationScene" backgroundImage="bg" id="8gk-tr-vuX" customClass="CustomAnimationController" customModule="Emoji_Extension">
+                    <items>
+                        <group width="44" height="35" alignment="left" id="2ZF-Il-M5O">
+                            <items>
+                                <imageView width="44" height="1" alignment="left" id="30U-UX-pS4"/>
+                            </items>
+                        </group>
+                        <group width="1" height="63" alignment="right" verticalAlignment="center" id="LFU-ZA-SXh">
+                            <items>
+                                <imageView width="1" height="1" alignment="right" verticalAlignment="center" id="xes-ae-gEw"/>
+                            </items>
+                        </group>
+                        <group width="1" height="44" alignment="left" verticalAlignment="bottom" id="4T6-o7-xTz">
+                            <items>
+                                <button width="37" height="1" alignment="left" title="&lt;" id="W0X-rP-QcP">
+                                    <connections>
+                                        <action selector="leftAction" destination="8gk-tr-vuX" id="GdI-YO-xfS"/>
+                                    </connections>
+                                </button>
+                                <button width="37" height="1" alignment="left" title="&gt;" id="XZL-aQ-z3V">
+                                    <connections>
+                                        <action selector="rightAction" destination="8gk-tr-vuX" id="oQb-cx-F3F"/>
+                                    </connections>
+                                </button>
+                                <button width="37" height="1" alignment="left" title="^" id="QPR-ky-nPE">
+                                    <connections>
+                                        <action selector="upAction" destination="8gk-tr-vuX" id="d60-b2-hS7"/>
+                                    </connections>
+                                </button>
+                                <button width="37" height="1" alignment="left" title="v" id="NOm-rL-hAe">
+                                    <connections>
+                                        <action selector="downAction" destination="8gk-tr-vuX" id="ogP-VL-QgL"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ballImage" destination="30U-UX-pS4" id="f7P-RU-HyY"/>
+                        <outlet property="downAction" destination="NOm-rL-hAe" id="kJR-Lh-hvd"/>
+                        <outlet property="imageGroup" destination="2ZF-Il-M5O" id="LoM-tX-WYL"/>
+                        <outlet property="rightAction" destination="XZL-aQ-z3V" id="YhF-Go-zSc"/>
+                        <outlet property="secondAnimation" destination="LFU-ZA-SXh" id="TJt-Q4-c8e"/>
+                        <outlet property="secondImage" destination="xes-ae-gEw" id="thB-LO-JyL"/>
+                        <outlet property="upAction" destination="QPR-ky-nPE" id="EHP-hb-iYH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="588" y="520"/>
+        </scene>
+        <!--ResultScene-->
+        <scene sceneID="5uF-Y8-cN1">
+            <objects>
+                <controller identifier="ResultScene" backgroundImage="bg_1" id="x5C-2I-V2S" customClass="ResultController" customModule="Emoji_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="K9g-am-8C8">
+                            <items>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" id="rPr-hn-RfH">
+                                    <color key="textColor" red="1" green="0.17854043389999999" blue="0.1829525146" alpha="0.32524379432624112" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Home" id="tKH-0t-EhC">
+                            <connections>
+                                <action selector="homeButtonAction" destination="x5C-2I-V2S" id="0pb-GP-OUX"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Replay" id="Kal-wK-gd0">
+                            <connections>
+                                <action selector="replayAction" destination="x5C-2I-V2S" id="z3R-p4-jyv"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="resultLabel" destination="rPr-hn-RfH" id="Dmj-Zd-cQY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="57" y="572"/>
+        </scene>
+        <!--CategoryScene-->
+        <scene sceneID="7i9-zV-MNF">
+            <objects>
+                <controller identifier="CategoryScene" backgroundImage="bg_1" id="Rfl-GS-1JA" customClass="CategoryController" customModule="Emoji_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Level_1" id="mhB-2i-2T4">
+                            <connections>
+                                <action selector="level_1Action" destination="Rfl-GS-1JA" id="Ec0-Pa-KAq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Level_2" id="jvy-ar-NZY">
+                            <connections>
+                                <action selector="level_2Action" destination="Rfl-GS-1JA" id="Xq0-dz-2WG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Level_3" id="134-pY-2fA">
+                            <connections>
+                                <action selector="level_3Action" destination="Rfl-GS-1JA" id="6fv-9x-cOk"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="level_1Action" destination="mhB-2i-2T4" id="VZc-ch-q01"/>
+                        <outlet property="level_2Action" destination="jvy-ar-NZY" id="Gtw-ew-7HB"/>
+                        <outlet property="thirdLevelButton" destination="134-pY-2fA" id="uN0-UM-BZn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-104" y="481"/>
+        </scene>
+        <!--AnimationScene-->
+        <scene sceneID="HbS-YZ-ibh">
+            <objects>
+                <controller identifier="AnimationScene" backgroundImage="bg_2" id="wpS-ZC-0t9" customClass="AnimationController" customModule="Emoji_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="hj7-rp-0wb">
+                            <items>
+                                <imageView alignment="right" verticalAlignment="center" id="maT-hd-Yg8"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="yxa-Dr-Eox">
+                            <items>
+                                <imageView width="1" alignment="center" verticalAlignment="bottom" id="uZr-sB-DvL"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ball" destination="maT-hd-Yg8" id="mPt-zL-FOq"/>
+                        <outlet property="player" destination="uZr-sB-DvL" id="GZH-Q1-0mp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="324" y="533"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Emoji" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="841"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Emoji" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

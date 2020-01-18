@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C153D381C7ACD2900E49757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D371C7ACD2900E49757 /* AppDelegate.swift */; };
+		0C153D3A1C7ACD2900E49757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D391C7ACD2900E49757 /* ViewController.swift */; };
+		0C153D3D1C7ACD2900E49757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D3B1C7ACD2900E49757 /* Main.storyboard */; };
+		0C153D3F1C7ACD2900E49757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D3E1C7ACD2900E49757 /* Assets.xcassets */; };
+		0C153D421C7ACD2900E49757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D401C7ACD2900E49757 /* LaunchScreen.storyboard */; };
+		0C153D4F1C7ACD8100E49757 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D4D1C7ACD8100E49757 /* Interface.storyboard */; };
+		0C153D511C7ACD8100E49757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D501C7ACD8100E49757 /* Assets.xcassets */; };
+		0C153D581C7ACD8100E49757 /* Emoji Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C153D571C7ACD8100E49757 /* Emoji Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C153D5F1C7ACD8200E49757 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D5E1C7ACD8200E49757 /* InterfaceController.swift */; };
+		0C153D611C7ACD8200E49757 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D601C7ACD8200E49757 /* ExtensionDelegate.swift */; };
+		0C153D631C7ACD8200E49757 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D621C7ACD8200E49757 /* NotificationController.swift */; };
+		0C153D651C7ACD8200E49757 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D641C7ACD8200E49757 /* GlanceController.swift */; };
+		0C153D671C7ACD8200E49757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C153D661C7ACD8200E49757 /* Assets.xcassets */; };
+		0C153D6B1C7ACD8200E49757 /* Emoji.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0C153D4B1C7ACD8100E49757 /* Emoji.app */; };
+		0C153D771C7AD26000E49757 /* QuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D761C7AD26000E49757 /* QuestionsController.swift */; };
+		0C153D7B1C7AEBA500E49757 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C153D7A1C7AEBA500E49757 /* CategoryController.swift */; };
+		0C5BED101C7D75C90047FD4A /* GamePlayController_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BED0F1C7D75C90047FD4A /* GamePlayController_1.swift */; };
+		0C5BED121C7D765A0047FD4A /* FirstRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BED111C7D765A0047FD4A /* FirstRowController.swift */; };
+		0C6321271C7C1E610099E7D4 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6321261C7C1E610099E7D4 /* ResultController.swift */; };
+		0C6321291C7C1FEF0099E7D4 /* opt_3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6321281C7C1FEF0099E7D4 /* opt_3.plist */; };
+		0C63212B1C7C5D0F0099E7D4 /* GamePlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63212A1C7C5D0F0099E7D4 /* GamePlayController.swift */; };
+		0C6A4E141C7EE8DA00B9CD31 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6A4E131C7EE8DA00B9CD31 /* AnimationController.swift */; };
+		0C76B5AD1C8063D8004250F8 /* CustomAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C76B5AC1C8063D8004250F8 /* CustomAnimationController.swift */; };
+		0CBC92F71C7B49990045A0AE /* Ques.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CBC92F61C7B49990045A0AE /* Ques.plist */; };
+		0CBC92F91C7B4ADF0045A0AE /* opt_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CBC92F81C7B4ADF0045A0AE /* opt_1.plist */; };
+		0CBC92FB1C7B4AEB0045A0AE /* opt_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CBC92FA1C7B4AEB0045A0AE /* opt_2.plist */; };
+		0CBC92FD1C7B4C310045A0AE /* corr_ans.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CBC92FC1C7B4C310045A0AE /* corr_ans.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C153D591C7ACD8100E49757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C153D2C1C7ACD2900E49757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C153D561C7ACD8100E49757;
+			remoteInfo = "Emoji Extension";
+		};
+		0C153D691C7ACD8200E49757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C153D2C1C7ACD2900E49757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C153D4A1C7ACD8100E49757;
+			remoteInfo = Emoji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C153D6F1C7ACD8200E49757 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C153D581C7ACD8100E49757 /* Emoji Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153D731C7ACD8200E49757 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0C153D6B1C7ACD8200E49757 /* Emoji.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153DAA1C7B15ED00E49757 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C153D341C7ACD2900E49757 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C153D371C7ACD2900E49757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C153D391C7ACD2900E49757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C153D3C1C7ACD2900E49757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C153D3E1C7ACD2900E49757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C153D411C7ACD2900E49757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C153D431C7ACD2900E49757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C153D4B1C7ACD8100E49757 /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C153D4E1C7ACD8100E49757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0C153D501C7ACD8100E49757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C153D521C7ACD8100E49757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C153D571C7ACD8100E49757 /* Emoji Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emoji Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C153D5D1C7ACD8100E49757 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0C153D5E1C7ACD8200E49757 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0C153D601C7ACD8200E49757 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0C153D621C7ACD8200E49757 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0C153D641C7ACD8200E49757 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		0C153D661C7ACD8200E49757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C153D681C7ACD8200E49757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C153D761C7AD26000E49757 /* QuestionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsController.swift; sourceTree = "<group>"; };
+		0C153D7A1C7AEBA500E49757 /* CategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		0C5BED0F1C7D75C90047FD4A /* GamePlayController_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayController_1.swift; sourceTree = "<group>"; };
+		0C5BED111C7D765A0047FD4A /* FirstRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRowController.swift; sourceTree = "<group>"; };
+		0C6321261C7C1E610099E7D4 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		0C6321281C7C1FEF0099E7D4 /* opt_3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = opt_3.plist; sourceTree = "<group>"; };
+		0C63212A1C7C5D0F0099E7D4 /* GamePlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayController.swift; sourceTree = "<group>"; };
+		0C6A4E131C7EE8DA00B9CD31 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		0C76B5AC1C8063D8004250F8 /* CustomAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimationController.swift; sourceTree = "<group>"; };
+		0CBC92F61C7B49990045A0AE /* Ques.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ques.plist; sourceTree = "<group>"; };
+		0CBC92F81C7B4ADF0045A0AE /* opt_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = opt_1.plist; sourceTree = "<group>"; };
+		0CBC92FA1C7B4AEB0045A0AE /* opt_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = opt_2.plist; sourceTree = "<group>"; };
+		0CBC92FC1C7B4C310045A0AE /* corr_ans.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = corr_ans.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C153D311C7ACD2900E49757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153D541C7ACD8100E49757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C153D2B1C7ACD2900E49757 = {
+			isa = PBXGroup;
+			children = (
+				0C153D361C7ACD2900E49757 /* WatchApp */,
+				0C153D4C1C7ACD8100E49757 /* Emoji */,
+				0C153D5B1C7ACD8100E49757 /* Emoji Extension */,
+				0C153D351C7ACD2900E49757 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C153D351C7ACD2900E49757 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C153D341C7ACD2900E49757 /* WatchApp.app */,
+				0C153D4B1C7ACD8100E49757 /* Emoji.app */,
+				0C153D571C7ACD8100E49757 /* Emoji Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C153D361C7ACD2900E49757 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				0C153D371C7ACD2900E49757 /* AppDelegate.swift */,
+				0C153D391C7ACD2900E49757 /* ViewController.swift */,
+				0C153D3B1C7ACD2900E49757 /* Main.storyboard */,
+				0C153D3E1C7ACD2900E49757 /* Assets.xcassets */,
+				0C153D401C7ACD2900E49757 /* LaunchScreen.storyboard */,
+				0C153D431C7ACD2900E49757 /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		0C153D4C1C7ACD8100E49757 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				0C153D4D1C7ACD8100E49757 /* Interface.storyboard */,
+				0C153D501C7ACD8100E49757 /* Assets.xcassets */,
+				0C153D521C7ACD8100E49757 /* Info.plist */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		0C153D5B1C7ACD8100E49757 /* Emoji Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C153D5E1C7ACD8200E49757 /* InterfaceController.swift */,
+				0C153D601C7ACD8200E49757 /* ExtensionDelegate.swift */,
+				0C153D621C7ACD8200E49757 /* NotificationController.swift */,
+				0C153D641C7ACD8200E49757 /* GlanceController.swift */,
+				0C153D761C7AD26000E49757 /* QuestionsController.swift */,
+				0C63212A1C7C5D0F0099E7D4 /* GamePlayController.swift */,
+				0C5BED0F1C7D75C90047FD4A /* GamePlayController_1.swift */,
+				0C153D7A1C7AEBA500E49757 /* CategoryController.swift */,
+				0C6321261C7C1E610099E7D4 /* ResultController.swift */,
+				0C5BED111C7D765A0047FD4A /* FirstRowController.swift */,
+				0C6A4E131C7EE8DA00B9CD31 /* AnimationController.swift */,
+				0C76B5AC1C8063D8004250F8 /* CustomAnimationController.swift */,
+				0C153D661C7ACD8200E49757 /* Assets.xcassets */,
+				0C153D681C7ACD8200E49757 /* Info.plist */,
+				0C153D5C1C7ACD8100E49757 /* Supporting Files */,
+				0CBC92F61C7B49990045A0AE /* Ques.plist */,
+				0CBC92F81C7B4ADF0045A0AE /* opt_1.plist */,
+				0CBC92FA1C7B4AEB0045A0AE /* opt_2.plist */,
+				0C6321281C7C1FEF0099E7D4 /* opt_3.plist */,
+				0CBC92FC1C7B4C310045A0AE /* corr_ans.plist */,
+			);
+			path = "Emoji Extension";
+			sourceTree = "<group>";
+		};
+		0C153D5C1C7ACD8100E49757 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C153D5D1C7ACD8100E49757 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C153D331C7ACD2900E49757 /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C153D461C7ACD2900E49757 /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				0C153D301C7ACD2900E49757 /* Sources */,
+				0C153D311C7ACD2900E49757 /* Frameworks */,
+				0C153D321C7ACD2900E49757 /* Resources */,
+				0C153D731C7ACD8200E49757 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C153D6A1C7ACD8200E49757 /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = 0C153D341C7ACD2900E49757 /* WatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C153D4A1C7ACD8100E49757 /* Emoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C153D701C7ACD8200E49757 /* Build configuration list for PBXNativeTarget "Emoji" */;
+			buildPhases = (
+				0C153D491C7ACD8100E49757 /* Resources */,
+				0C153D6F1C7ACD8200E49757 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C153D5A1C7ACD8100E49757 /* PBXTargetDependency */,
+			);
+			name = Emoji;
+			productName = Emoji;
+			productReference = 0C153D4B1C7ACD8100E49757 /* Emoji.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0C153D561C7ACD8100E49757 /* Emoji Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C153D6C1C7ACD8200E49757 /* Build configuration list for PBXNativeTarget "Emoji Extension" */;
+			buildPhases = (
+				0C153D531C7ACD8100E49757 /* Sources */,
+				0C153D541C7ACD8100E49757 /* Frameworks */,
+				0C153D551C7ACD8100E49757 /* Resources */,
+				0C153DAA1C7B15ED00E49757 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Extension";
+			productName = "Emoji Extension";
+			productReference = 0C153D571C7ACD8100E49757 /* Emoji Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C153D2C1C7ACD2900E49757 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ChicMic;
+				TargetAttributes = {
+					0C153D331C7ACD2900E49757 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0C153D4A1C7ACD8100E49757 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0C153D561C7ACD8100E49757 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 0C153D2F1C7ACD2900E49757 /* Build configuration list for PBXProject "WatchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C153D2B1C7ACD2900E49757;
+			productRefGroup = 0C153D351C7ACD2900E49757 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C153D331C7ACD2900E49757 /* WatchApp */,
+				0C153D4A1C7ACD8100E49757 /* Emoji */,
+				0C153D561C7ACD8100E49757 /* Emoji Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C153D321C7ACD2900E49757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C153D421C7ACD2900E49757 /* LaunchScreen.storyboard in Resources */,
+				0C153D3F1C7ACD2900E49757 /* Assets.xcassets in Resources */,
+				0C153D3D1C7ACD2900E49757 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153D491C7ACD8100E49757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C153D511C7ACD8100E49757 /* Assets.xcassets in Resources */,
+				0C153D4F1C7ACD8100E49757 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153D551C7ACD8100E49757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6321291C7C1FEF0099E7D4 /* opt_3.plist in Resources */,
+				0CBC92F91C7B4ADF0045A0AE /* opt_1.plist in Resources */,
+				0CBC92FB1C7B4AEB0045A0AE /* opt_2.plist in Resources */,
+				0CBC92F71C7B49990045A0AE /* Ques.plist in Resources */,
+				0C153D671C7ACD8200E49757 /* Assets.xcassets in Resources */,
+				0CBC92FD1C7B4C310045A0AE /* corr_ans.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C153D301C7ACD2900E49757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C153D3A1C7ACD2900E49757 /* ViewController.swift in Sources */,
+				0C153D381C7ACD2900E49757 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C153D531C7ACD8100E49757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C153D631C7ACD8200E49757 /* NotificationController.swift in Sources */,
+				0C6A4E141C7EE8DA00B9CD31 /* AnimationController.swift in Sources */,
+				0C153D611C7ACD8200E49757 /* ExtensionDelegate.swift in Sources */,
+				0C153D5F1C7ACD8200E49757 /* InterfaceController.swift in Sources */,
+				0C5BED101C7D75C90047FD4A /* GamePlayController_1.swift in Sources */,
+				0C76B5AD1C8063D8004250F8 /* CustomAnimationController.swift in Sources */,
+				0C153D651C7ACD8200E49757 /* GlanceController.swift in Sources */,
+				0C5BED121C7D765A0047FD4A /* FirstRowController.swift in Sources */,
+				0C153D771C7AD26000E49757 /* QuestionsController.swift in Sources */,
+				0C6321271C7C1E610099E7D4 /* ResultController.swift in Sources */,
+				0C153D7B1C7AEBA500E49757 /* CategoryController.swift in Sources */,
+				0C63212B1C7C5D0F0099E7D4 /* GamePlayController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C153D5A1C7ACD8100E49757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C153D561C7ACD8100E49757 /* Emoji Extension */;
+			targetProxy = 0C153D591C7ACD8100E49757 /* PBXContainerItemProxy */;
+		};
+		0C153D6A1C7ACD8200E49757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C153D4A1C7ACD8100E49757 /* Emoji */;
+			targetProxy = 0C153D691C7ACD8200E49757 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C153D3B1C7ACD2900E49757 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C153D3C1C7ACD2900E49757 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C153D401C7ACD2900E49757 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C153D411C7ACD2900E49757 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C153D4D1C7ACD8100E49757 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C153D4E1C7ACD8100E49757 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C153D441C7ACD2900E49757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C153D451C7ACD2900E49757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C153D471C7ACD2900E49757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C153D481C7ACD2900E49757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C153D6D1C7ACD8200E49757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Emoji Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0C153D6E1C7ACD8200E49757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Emoji Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		0C153D711C7ACD8200E49757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Emoji_Extension;
+				INFOPLIST_FILE = Emoji/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0C153D721C7ACD8200E49757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Emoji_Extension;
+				INFOPLIST_FILE = Emoji/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frimustechnologies.WatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C153D2F1C7ACD2900E49757 /* Build configuration list for PBXProject "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C153D441C7ACD2900E49757 /* Debug */,
+				0C153D451C7ACD2900E49757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C153D461C7ACD2900E49757 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C153D471C7ACD2900E49757 /* Debug */,
+				0C153D481C7ACD2900E49757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C153D6C1C7ACD8200E49757 /* Build configuration list for PBXNativeTarget "Emoji Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C153D6D1C7ACD8200E49757 /* Debug */,
+				0C153D6E1C7ACD8200E49757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C153D701C7ACD8200E49757 /* Build configuration list for PBXNativeTarget "Emoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C153D711C7ACD8200E49757 /* Debug */,
+				0C153D721C7ACD8200E49757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C153D2C1C7ACD2900E49757 /* Project object */;
+}
